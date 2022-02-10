@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/numberInteractionText"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interactions : 0"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/newInteractionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/numberInteractionText"
+            android:layout_centerHorizontal="true"
+            android:text="New interaction"
+            android:layout_margin="10dp"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/resetInteractionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mainLayout"
+        android:layout_centerHorizontal="true"
+        android:text="Reset"
+        android:layout_margin="20dp"/>
+
+
+
+</RelativeLayout>
